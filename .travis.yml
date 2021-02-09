@@ -8,7 +8,22 @@ os:
 language: node_js
 node_js:
   - node
+  - lts/*
   - '15'
   - '14'
   - '13'
   - '12'
+  - '9'
+  - '8'
+  - '7'
+  - '6'
+  - '5'
+  - '4'
+  - '0.12'
+  - '0.10'
+jobs:
+  exclude:
+    - node_js: '0.12'
+      arch: ppc64le
+    - node_js: '0.10'
+      arch: ppc64le
